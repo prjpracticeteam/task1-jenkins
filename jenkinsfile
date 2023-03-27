@@ -8,12 +8,12 @@ pipeline {
         }
         stage ('docker build') {
             steps {
-                sh 'docker build -t project1:v5 .'
+                sh 'docker build -t project1:v6 .'
             }
         }
         stage ('docker run') {
             steps {
-                sh 'docker run --name projectcont2  project1:v4'
+                sh 'docker run --name projectcont2  project1:v6'
             }
         }
     }
