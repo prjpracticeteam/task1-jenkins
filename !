@@ -1,4 +1,0 @@
-FROM python
-COPY . /opt/myapp/
-WORKDIR . /opt/myapp/
-CMD ["python", "project1.py"]
